@@ -1,0 +1,12 @@
+h2{
+    margin-top: 12px;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: #2c2c34;
+}
+.card__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}

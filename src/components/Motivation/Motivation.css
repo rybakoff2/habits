@@ -1,0 +1,27 @@
+.motivation{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+font-family:"Comic Sans MS", "Comic Sans", cursive;
+padding-left: 8px;
+padding-right: 8px;
+}
+.motivation__head{
+    font-family:"Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+}
+.motivation__text{
+    font-size: 18px;
+}
+.motivation__text-autor{
+    font-style: italic;
+}
+@media screen and (max-width: 480px){
+    .motivation__head{
+        font-size: 16px;  
+}
+.motivation__text{
+    font-size: 14px;
+}
+}
