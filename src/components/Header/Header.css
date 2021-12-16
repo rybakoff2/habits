@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Comic-Sans-MS";
+    font-weight: 400;
+    font-style: normal;
+    src:url("../fonts/ComicSansMS.woff2") format("woff2");
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -13,7 +20,7 @@ border-bottom: 2px solid #2c2c34;
 color:#2c2c34;
 justify-content: space-between;
 align-items: center;
-font-family: "Comic Sans MS", "Comic Sans", cursive;
+font-family: "Comic-Sans-MS";
 font-size: 24px;
 font-weight: 500;
 text-decoration: none;
