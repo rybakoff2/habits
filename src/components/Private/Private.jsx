@@ -1,13 +1,13 @@
-import React, {useContext, useEffect} from 'react'
-import {habitStorage} from '../../databases/habitStorage';
+import React, { useContext, useEffect } from 'react'
+import { habitStorage } from '../../databases/habitStorage';
 import HabitCard from "../HabitCard/HabitCard";
-import {AppContext, AuthContext} from '../../App';
-import {Redirect} from 'react-router-dom';
+import { AppContext, AuthContext } from '../../App';
+import { Redirect } from 'react-router-dom';
 
 
 const Private = () => {
-    const {isAuth} = useContext(AuthContext)
-    const {habits, setHabits} = useContext(AppContext)
+    const { isAuth } = useContext(AuthContext)
+    const { habits, setHabits } = useContext(AppContext)
 
 
     if (isAuth) {
@@ -22,7 +22,7 @@ const Private = () => {
                     {habits.map((item) => {
                         return (
                             <HabitCard key={item.id}
-                                       card={item}
+                                card={item}
                             />)
                     })
                     }
@@ -32,7 +32,7 @@ const Private = () => {
     } else {
 
         return (
-            <Redirect to='/login'/>
+            <Redirect to='/login' />
         )
     }
 };

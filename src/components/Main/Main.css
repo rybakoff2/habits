@@ -2,63 +2,70 @@
   font-family: "Comic-Sans-MS";
   font-weight: 400;
   font-style: normal;
-  src:url("../fonts/ComicSansMS.woff2") format("woff2");
+  src: url("../fonts/ComicSansMS.woff2") format("woff2");
 }
-.main-head{
-font-size: 28px;
-font-family: "Comic-Sans-MS";
-text-align: center;
+
+.main-head {
+  font-size: 28px;
+  font-family: "Comic-Sans-MS";
+  text-align: center;
 
 }
 
-.main-hr{
+.main-hr {
   margin: 0 auto;
   margin-top: 10px;
   height: 4px;
-	border: none;
+  border: none;
   background-color: #2c2c34;
-  animation-name:  left;
+  animation-name: left;
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
+
 @keyframes left {
   0% {
     width: 80vw;
   }
-  50%{
+
+  50% {
     width: 40vw;
   }
+
   100% {
     width: 80vw;
   }
 }
 
-.main-image{
+.main-image {
   display: block;
-  margin:0 auto;
+  margin: 0 auto;
   margin-top: 32px;
   width: 70vw;
   max-width: 1000px;
   min-width: 320px;
-  border-radius:8px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(37, 37, 37, 0.2);
 }
-.text-motivation{
-    margin:0 auto;
-    padding: 8px;
-    width: 60vw;
-    text-align: center;
+
+.text-motivation {
+  margin: 0 auto;
+  padding: 8px;
+  width: 60vw;
+  text-align: center;
 }
-@media screen and (max-width: 480px)
-{
-  .main-image{
+
+@media screen and (max-width: 480px) {
+  .main-image {
     min-width: 200px;
     margin-top: 16px;
   }
-  .main-head{
+
+  .main-head {
     font-size: 20px;
   }
-  .main-hr{
-    margin-top:4px;
+
+  .main-hr {
+    margin-top: 4px;
   }
 }

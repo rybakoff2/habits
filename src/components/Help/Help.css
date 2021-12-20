@@ -1,21 +1,12 @@
-@font-face {
-    font-family: "Comic-Sans-MS";
-    font-weight: 400;
-    font-style: normal;
-    src:url("../fonts/ComicSansMS.woff2") format("woff2");
-  }
 .about__title{
     color:#2c2c34;
+    font-family: "Comic-Sans-MS";
 }
 .about__wrapper-paragraph{
     height: 70vh;
     position: relative;
     margin: 0 auto;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; */
+
 
 }
 .about__paragraph{
@@ -23,7 +14,7 @@
     margin: 0 auto;
     background-color: #fbfced;
     text-align: center;
-    width: 60vw;
+    width: 50vw;
     height: 120px;
     padding-top: 16px;
     font-family:"Comic-Sans-MS";
@@ -36,13 +27,13 @@
 }
 @keyframes top {
 0% {
-    margin-top: 100px;
+    margin-top: 80px;
     overflow: hidden;
     background-color: transparent;
 }
 100% {
     margin-top: 20px;
-    background-color:#fbfced ;
+    background-color:#fbfced;
     }
 }
 @media screen and (max-width: 480px){
