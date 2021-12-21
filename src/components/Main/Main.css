@@ -5,14 +5,14 @@
   src: url("../fonts/ComicSansMS.woff2") format("woff2");
 }
 
-.main-head {
+.main__head {
   font-size: 28px;
   font-family: "Comic-Sans-MS";
   text-align: center;
 
 }
 
-.main-hr {
+.main__hr {
   margin: 0 auto;
   margin-top: 10px;
   height: 4px;

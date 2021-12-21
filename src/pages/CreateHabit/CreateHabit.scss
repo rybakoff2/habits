@@ -1,0 +1,54 @@
+
+.form-habit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    width: 60vw;
+    height: 30%;
+    background-color: antiquewhite;
+    border-radius: 8px;
+
+    &__title{
+        display: block;
+        width: 80%;
+        height: 40px;
+        border: none;
+        border-bottom: 2px solid #2c2c34;
+        outline: none;
+        font-size: 20px;
+        background-color: transparent;
+    }
+
+    &__description{
+        display: block;
+        margin-top: 12px;
+        width: 80%;
+        height: 80px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #2c2c34;
+        background-color: transparent;
+        resize: none;
+        overflow-y: hidden;
+    }
+    &__button{
+        display: block;
+        margin-top: 12px;
+        width: 100px;
+        height: 40px;
+        border: none;
+        background-color:#eee;
+
+        &:hover{
+            cursor: pointer;
+            background-color:#d8d8d8;
+        }
+        
+       
+    }
+}

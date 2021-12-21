@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react';
-import {customAlphabet} from 'nanoid'
+import '../CreateHabit/CreateHabit.scss';
+import {customAlphabet} from 'nanoid';
 import {AppContext, AuthContext} from "../../App";
 import {useHistory} from "react-router-dom";
 
@@ -7,7 +8,7 @@ const nanoid = customAlphabet('1234567890', 10)
 
 const CreateHabit = () => {
     const history = useHistory()
-    const {isAuth} = useContext(AuthContext)
+    // const {isAuth} = useContext(AuthContext)
     const {setHabits} = useContext(AppContext)
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
@@ -25,19 +26,26 @@ const CreateHabit = () => {
     }
 
     return (
-        <form onSubmit={createPost}>
+        <form className='form-habit' onSubmit={createPost}>
             <input
+                className='form-habit__title'
                 type="text"
                 required
+                maxlength="20"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
 
             />
-            <input type="text"
+            <textarea 
+                    className='form-habit__description'
+                    type="text-area"
+                    maxlength="60"
                    value={description}
                    onChange={(e) => setDescription(e.target.value)}
             />
-            <button type="submit">Создать</button>
+            <button 
+                    className='form-habit__button'
+                    type="submit">Создать</button>
         </form>
     );
 };

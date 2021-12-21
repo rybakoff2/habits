@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 250px;
   height: 200px;
   padding: 10px;
@@ -23,10 +24,12 @@
   border-radius: 16px;
 }
 .card__title{
+
     height: 32px;
     width: 200px;
 }
 .card__description{
+    word-wrap: break-word;
     margin-top: 8px;
     color:saddlebrown;
     width: 200px;

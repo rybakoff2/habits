@@ -5,6 +5,8 @@
 }
 .private__header{
     text-align: center;
+    color:#2c2c34;
+    font-weight: 500;
     margin-bottom: 12px;
 }
 .card__link{
