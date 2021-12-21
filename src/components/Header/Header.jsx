@@ -5,33 +5,27 @@ import {useContext} from 'react';
 import {AuthContext} from '../../App';
 
 function Header() {
-    const {isAuth, logout} = useContext(AuthContext)
+    const {isAuth, logout,login} = useContext(AuthContext)
     return (
         <nav className='navigation'>
             <Link to="/">
                 <img className='navigation__logo' src={logo} alt="logo"/>
             </Link>
-            <ul className='navigation__wrapper-links'>
+            <ul className='navigation__list'>
+                <li className='navigation__links'>
+                <Link className="navigation__link" to="/help">
+                    Помощь
+                    </Link>
+                </li>
                 <li className='navigation__links'>
                     <Link className="navigation__link" to="/private">
                         {isAuth ? 'Мои привычки' : 'Войти'}
                     </Link>
-                </li>
-                {isAuth && <li className='navigation__links'>
-                    <Link className="navigation__link" to="/create">Create
-                    </Link>
-                </li>}
-                <li className='navigation__links'>
-                    <Link className="navigation__link" to="/help">
-                        Помощь
-                    </Link>
-                </li>
-            </ul>
-
-            {isAuth && <button onClick={logout}>
+                 </li>
+                {isAuth && <li className='navigation__link' onClick={logout}>
                 Выйти
-            </button>}
-
+                </li>}
+                </ul>
         </nav>
     );
 }

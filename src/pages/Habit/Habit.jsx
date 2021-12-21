@@ -23,8 +23,8 @@ const Habit = () => {
     function deleteHabit() {
 
 
-        const answer = prompt('Вы точно хотите удалить?')
-        if (answer === '1') {
+        const answer = prompt('Если вы действительно хотите удалить, то введите Yes?')
+        if (answer === 'Yes') {
             const newHabits = habits.filter(item => item.id != id)
             setHabits(newHabits)
             console.log("deletedHabit")
