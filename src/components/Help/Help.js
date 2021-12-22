@@ -7,6 +7,7 @@ function Help() {
            <div className='about__wrapper-paragraph'>
                 <p className='about__paragraph'>Habits tracker - приложение, которое помогает выработать и отследить полезные привычки.</p>
                 <p className='about__paragraph'>Для того, чтобы начать пользоваться приложением - необходимо авторизоваться</p>
+                <p className='about__paragraph'>После авторизации Вы сможете создавать или удалять привычки</p>
             </div>
         </div>
     );

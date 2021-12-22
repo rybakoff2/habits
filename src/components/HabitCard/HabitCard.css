@@ -1,13 +1,8 @@
-@font-face {
-    font-family: "Comic-Sans-MS";
-    font-weight: 400;
-    font-style: normal;
-    src:url("../fonts/ComicSansMS.woff2") format("woff2");
-  }
 .wrapper{
     display: flex;
     flex-direction: row;
 }
+
 .card{
   display: flex;
   flex-direction: column;
@@ -23,6 +18,10 @@
   border: 2px solid #38382d;
   border-radius: 16px;
 }
+.card:hover{
+  transition: .5s;
+  background-color: #dadbcf;
+}
 .card__title{
 
     height: 32px;
@@ -33,4 +32,134 @@
     margin-top: 8px;
     color:saddlebrown;
     width: 200px;
+}
+.card__wrapper-btn{
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+.card__button{
+  cursor: pointer;
+  margin-top: 4px;
+  display: block;
+  border:none;
+  font-size: 18px;
+  width:24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.card__button-green{
+background-color: #d9dd92;
+}
+.card__button-red{
+  background-color: #f46036;
+  }
+.progress__wrapper{
+  position: relative;
+  width: 108px;
+  height: 32px;
+  border: 2px solid black;
+  border-radius: 4px;
+
+}
+.prog0{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  display: block;
+  width:10px;
+  height: 24px;
+  background-color: brown;
+}
+.prog1{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:20px;
+  height: 24px;
+  background-color:rgb(202, 61, 42);
+}
+.prog2{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:30px;
+  height: 24px;
+  background-color:rgb(238, 72, 43);
+}
+.prog3{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:40px;
+  height: 24px;
+  background-color:rgb(45, 117, 158);
+}
+.prog4{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:50px;
+  height: 24px;
+  background-color:rgb(55, 167, 211);
+}
+.prog5{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:60px;
+  height: 24px;
+  background-color:rgb(34, 141, 61);
+}
+.prog6{
+  
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:70px;
+  height: 24px;
+  background-color:rgb(53, 155, 27);
+}
+.prog7{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:80px;
+  height: 24px;
+  background-color:rgb(45, 199, 40);
+}
+.prog8{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:90px;
+  height: 24px;
+  background-color:rgb(40, 224, 64);
+}
+.prog9{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:100px;
+  height: 24px;
+  background-color:rgb(57, 251, 31);
+}
+.prog10{
+  border-radius: 2px;
+  position: absolute;
+  top:2px;
+  left:2px;
+  width:100px;
+  height: 24px;
+  background-color:rgb(57, 251, 31);
 }

@@ -9,7 +9,7 @@
     padding: 20px;
     width: 60vw;
     height: 30%;
-    background-color: antiquewhite;
+    background-color: #ece4b7;
     border-radius: 8px;
 
     &__title{
@@ -28,6 +28,7 @@
         margin-top: 12px;
         width: 80%;
         height: 80px;
+        padding-top: 20px;
         font-size: 20px;
         border: none;
         outline: none;
@@ -35,7 +36,7 @@
         background-color: transparent;
         resize: none;
         overflow-y: hidden;
-    }
+     }
     &__button{
         display: block;
         margin-top: 12px;
@@ -43,8 +44,10 @@
         height: 40px;
         border: none;
         background-color:#eee;
+        border-radius: 8px;
 
         &:hover{
+            transition: .5s;
             cursor: pointer;
             background-color:#d8d8d8;
         }
@@ -52,3 +55,16 @@
        
     }
 }
+@media screen and (max-width: 480px) {
+    .form-habit{
+        width: 80vw;
+    
+    &__title{
+        font-size: 16px;
+    }
+    &__description{
+        padding-top: 8px;
+        font-size: 16px;
+    }
+    }
+    }

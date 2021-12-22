@@ -3,25 +3,27 @@
     font-family: "Comic-Sans-MS";
 }
 .about__wrapper-paragraph{
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin: 0 auto;
 
 
 }
 .about__paragraph{
-    display: block;
+    display: table-cell;
+    vertical-align: middle;
     margin: 0 auto;
     background-color: #eee;
     text-align: center;
     width: 50vw;
-    height: 120px;
-    padding-top: 16px;
+    padding: 16px;
     font-family:"Comic-Sans-MS";
     margin-top: 20px;
-    animation-name: top;
+
+    animation: top 1.2s linear;
+    animation-fill-mode: both;
     animation-delay: .5s;
-    animation-duration: 1.2s;
     box-shadow: 2px 2px 10px rgba(37, 37, 37, 0.2);
     border: 2px solid #2c2c34;
     border-radius: 8px;
@@ -29,8 +31,7 @@
 @keyframes top {
 0% {
     margin-top: 80px;
-    /* overflow: hidden; */
-    opacity: 0;
+
 }
 100% {
     margin-top: 20px;
@@ -38,7 +39,6 @@
 }
 @media screen and (max-width: 480px){
     .about__paragraph{
-        opacity: 1;
         width: 80vw;
     }
 }

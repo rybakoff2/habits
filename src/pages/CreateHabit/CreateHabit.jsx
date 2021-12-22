@@ -8,7 +8,6 @@ const nanoid = customAlphabet('1234567890', 10)
 
 const CreateHabit = () => {
     const history = useHistory()
-    // const {isAuth} = useContext(AuthContext)
     const {setHabits} = useContext(AppContext)
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
@@ -21,13 +20,14 @@ const CreateHabit = () => {
             description: description
         }
         setHabits(prevState => [...prevState, newHabit])
-        console.log("newHabit",newHabit)
+
         return history.push('/private')
     }
 
     return (
         <form className='form-habit' onSubmit={createPost}>
             <input
+                placeholder='Название привычки'
                 className='form-habit__title'
                 type="text"
                 required
@@ -38,6 +38,7 @@ const CreateHabit = () => {
             />
             <textarea 
                     className='form-habit__description'
+                    placeholder='Описание привычки'
                     type="text-area"
                     maxlength="60"
                    value={description}

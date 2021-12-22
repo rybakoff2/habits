@@ -23,25 +23,23 @@ const Habit = () => {
     function deleteHabit() {
 
 
-        const answer = prompt('Если вы действительно хотите удалить, то введите Yes?')
-        if (answer === 'Yes') {
+        const answer = prompt('Хотите далить?Чтобы подтвердить введите "Yes" или "Да"')
+        if (answer === 'Yes'||answer ==='yes'||answer ==='Да'||answer ==='да') {
             const newHabits = habits.filter(item => item.id != id)
             setHabits(newHabits)
             console.log("deletedHabit")
             return history.push('/private')
         }
 
-        console.log("NOT deletedHabit")
-
     }
 
 
     return (
         <div className="habit">
-            <h3 className="card__title">{habit.title}</h3>
-            <p className="card__description">{habit.description}</p>
+            <h3 className="habit__title">{habit.title}</h3>
+            <p className="habit__description">{habit.description}</p>
             <div>
-                <button onClick={deleteHabit}>X</button>
+                <button className='habit__button' onClick={deleteHabit}>Удалить привычку</button>
             </div>
         </div>
     );
