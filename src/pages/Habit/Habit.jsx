@@ -22,7 +22,6 @@ const Habit = () => {
 
     function deleteHabit() {
 
-
         const answer = prompt('Хотите далить?Для подтверждения введите "Yes" или "Да"')
         if (answer === 'Yes'||answer ==='yes'||answer ==='Да'||answer ==='да') {
             const newHabits = habits.filter(item => item.id != id)

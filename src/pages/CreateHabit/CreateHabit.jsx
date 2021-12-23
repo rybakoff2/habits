@@ -1,9 +1,9 @@
 import React, {useContext, useState} from 'react';
 import '../CreateHabit/CreateHabit.scss';
 import {customAlphabet} from 'nanoid';
-import {AppContext, AuthContext} from "../../App";
+import {AppContext} from "../../App";
 import {useHistory} from "react-router-dom";
-import { habitStorage } from '../../databases/habitStorage';
+
 const nanoid = customAlphabet('1234567890', 10)
 
 
@@ -18,12 +18,14 @@ const CreateHabit = () => {
         const newHabit = {
             id: Number(nanoid()),
             title: title,
-            description: description
+            description: description,
+            counter: 1
         }
         setHabits(prevState => [...prevState, newHabit])
-    
-       habitStorage.push(newHabit)
-       localStorage.setItem('habit', JSON.stringify(habitStorage))
+
+        const prev = JSON.parse(localStorage.getItem('habits'))
+        prev.push(newHabit)
+        localStorage.setItem('habits', JSON.stringify(prev))
         return history.push('/private')
     }
 
@@ -39,17 +41,18 @@ const CreateHabit = () => {
                 onChange={(e) => setTitle(e.target.value)}
 
             />
-            <textarea 
-                    className='form-habit__description'
-                    placeholder='Описание привычки'
-                    type="text-area"
-                    maxlength="60"
-                   value={description}
-                   onChange={(e) => setDescription(e.target.value)}
+            <textarea
+                className='form-habit__description'
+                placeholder='Описание привычки'
+                type="text-area"
+                maxlength="60"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
             />
-            <button 
-                    className='form-habit__button'
-                    type="submit">Создать</button>
+            <button
+                className='form-habit__button'
+                type="submit">Создать
+            </button>
         </form>
     );
 };

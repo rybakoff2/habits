@@ -16,24 +16,21 @@ function App() {
         if (localStorage.getItem('isAuth')) {
             setIsAuth(true)
         }
-        
-       }, [])
 
+        if (!localStorage.getItem('habits')) {
+            localStorage.setItem('habits', JSON.stringify(habitStorage))
+            setHabits(habitStorage)
+        } else {
+            const getHabits = JSON.parse(localStorage.getItem('habits'))
+            setHabits(getHabits)
+        }
 
-       useEffect(() => {
-           if(localStorage.getItem('habit')===null) {
-            localStorage.setItem('habit',JSON.stringify(habitStorage))
-
-       }
-       else {const habits = JSON.parse(localStorage.getItem('habit'))
-            setHabits(habits)
-    }
     }, [])
+
 
     function login() {
         localStorage.setItem('isAuth', 'true')
         setIsAuth(true)
-
     }
 
     function logout() {
