@@ -19,7 +19,7 @@ function Header() {
                 </li>
                 <li className='navigation__links'>
                     <Link className="navigation__link" to="/private">
-                        {isAuth ? 'Мои привычки' : 'Войти'}
+                     Мои привычки   {/* {isAuth ? 'Мои привычки' : 'Войти'} */}
                     </Link>
                  </li>
                 {isAuth && <li className='navigation__link' onClick={logout}>

@@ -7,6 +7,7 @@ import {habitStorage} from "./databases/habitStorage";
 export const AuthContext = createContext(null);
 export const AppContext = createContext(null);
 
+
 function App() {
     const [habits, setHabits] = useState([])
     const [isAuth, setIsAuth] = useState(false)
@@ -15,13 +16,24 @@ function App() {
         if (localStorage.getItem('isAuth')) {
             setIsAuth(true)
         }
-        const res = habitStorage
-        setHabits(res)
+        
+       }, [])
+
+
+       useEffect(() => {
+           if(localStorage.getItem('habit')===null) {
+            localStorage.setItem('habit',JSON.stringify(habitStorage))
+
+       }
+       else {const habits = JSON.parse(localStorage.getItem('habit'))
+            setHabits(habits)
+    }
     }, [])
 
     function login() {
         localStorage.setItem('isAuth', 'true')
         setIsAuth(true)
+
     }
 
     function logout() {

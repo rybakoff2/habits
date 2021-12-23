@@ -3,8 +3,9 @@ import '../CreateHabit/CreateHabit.scss';
 import {customAlphabet} from 'nanoid';
 import {AppContext, AuthContext} from "../../App";
 import {useHistory} from "react-router-dom";
-
+import { habitStorage } from '../../databases/habitStorage';
 const nanoid = customAlphabet('1234567890', 10)
+
 
 const CreateHabit = () => {
     const history = useHistory()
@@ -20,7 +21,9 @@ const CreateHabit = () => {
             description: description
         }
         setHabits(prevState => [...prevState, newHabit])
-
+    
+       habitStorage.push(newHabit)
+       localStorage.setItem('habit', JSON.stringify(habitStorage))
         return history.push('/private')
     }
 

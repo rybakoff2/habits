@@ -17,8 +17,8 @@ $color: #2c2c34;
     display: block;
 
     &:hover {
-      opacity: 0.7;
-      transition: 0.3s;
+      opacity: .7;
+      transition: .3s;
     }
   }
 
@@ -32,18 +32,22 @@ $color: #2c2c34;
   }
   &__link {
     cursor: pointer;
+    font-size: 18px;
     padding: 8px 4px;
     display: block;
-    border: 2px solid #45484b;
+    color: whitesmoke;
+    border: 2px solid rgb(27, 27, 27);
     border-radius: 4px;
-    background-color: #e0e1dd;
+    background-color: #2c2c34;
       &:hover {
-        transition: 0.1s;
-        background-color: rgba(#a4a5a2, .9);
+        transition: 0.5s;
+        background-color: rgba(#5c5c5c, .9);
       }
+      &:visited {
+        color: whitesmoke;
   }
 }
-
+}
 @media screen and (max-width: 480px) {
   .navigation {
     flex-direction: column;

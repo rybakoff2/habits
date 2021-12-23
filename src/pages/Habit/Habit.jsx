@@ -23,10 +23,11 @@ const Habit = () => {
     function deleteHabit() {
 
 
-        const answer = prompt('Хотите далить?Чтобы подтвердить введите "Yes" или "Да"')
+        const answer = prompt('Хотите далить?Для подтверждения введите "Yes" или "Да"')
         if (answer === 'Yes'||answer ==='yes'||answer ==='Да'||answer ==='да') {
             const newHabits = habits.filter(item => item.id != id)
             setHabits(newHabits)
+            localStorage.setItem('habit',JSON.stringify(newHabits))
             console.log("deletedHabit")
             return history.push('/private')
         }

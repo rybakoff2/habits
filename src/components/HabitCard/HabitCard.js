@@ -1,12 +1,9 @@
 import './HabitCard.css'
 import {Link} from "react-router-dom";
-import { useState } from 'react';
-
-
-
+import { useState, useContext} from 'react';
 
 const HabitCards = (props) => {
-let a=''
+let finishProgress=''
     
     const {card} = props;
     const {title, description, id} = card
@@ -16,7 +13,7 @@ let a=''
         function done(){
             if (counter === 9){
 
-                return a = 'done'
+                return finishProgress = ': Done!'
             }
         }
 

@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom'
 import {AuthContext} from '../../App'
 import './Login.scss'
 import {usersDb} from '../../databases/usersDb'
-
+import Help from '../../components/Help/Help'
 
 export default function Login() {
 
@@ -20,8 +20,11 @@ export default function Login() {
             (user.login === email && user.password === pass))
 
         if (getCurrentUser) {
+           
             login();
             history.push('/private')
+
+            
 
         } else alert('нет такого пользователя')
     }
