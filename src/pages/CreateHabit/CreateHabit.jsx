@@ -21,11 +21,11 @@ const CreateHabit = () => {
             description: description,
             counter: 1
         }
-        setHabits(prevState => [...prevState, newHabit])
-
         const prev = JSON.parse(localStorage.getItem('habits'))
         prev.push(newHabit)
         localStorage.setItem('habits', JSON.stringify(prev))
+
+        setHabits(JSON.parse(localStorage.getItem('habits')))
         return history.push('/private')
     }
 
