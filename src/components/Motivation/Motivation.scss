@@ -6,19 +6,20 @@ justify-content: center;
 text-align: center;
 padding-left: 8px;
 padding-right: 8px;
-}
-.motivation__head{
-    margin-top: 8px;
-    font-size: 20px;
-}
-.motivation__text{
-    font-size: 18px;
-}
-.motivation__text-autor{
-    font-style: italic;
+
+    &__head{
+        margin-top: 8px;
+        font-size: 20px;
+    }
+    &__text{
+        font-size: 18px;
+    }
+    &__text-autor{
+        font-style: italic;
+    }
 }
 @media screen and (max-width: 480px){
-    .motivation__head{
+.motivation__head{
         font-size: 16px;  
 }
 .motivation__text{

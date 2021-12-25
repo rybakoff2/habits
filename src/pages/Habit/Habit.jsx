@@ -26,8 +26,7 @@ const Habit = () => {
         if (answer === 'Yes'||answer ==='yes'||answer ==='Да'||answer ==='да') {
             const newHabits = habits.filter(item => item.id != id)
             setHabits(newHabits)
-            localStorage.setItem('habit',JSON.stringify(newHabits))
-            console.log("deletedHabit")
+            localStorage.setItem('habits',JSON.stringify(newHabits))
             return history.push('/private')
         }
 

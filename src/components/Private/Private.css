@@ -3,16 +3,19 @@
     flex-wrap: wrap;
     justify-content:space-evenly;
 }
+
 .private__header{
     text-align: center;
     color:#2c2c34;
     font-weight: 500;
     margin-bottom: 12px;
 }
+
 .card__link{
     display: block;
     margin: 0 auto;
 }
+
 .card__img{
     width: 50px;
     display: block;
@@ -26,11 +29,13 @@
     flex-direction: column;
     align-items: center;
 }
+
 .no-login-user__text{
     text-align: center;
     font-size: 24px;
     color:#424242;
 }
+
 .no-login-user__button{
     display: block;
     margin-top: 24px;
@@ -44,6 +49,7 @@
     color: whitesmoke;
     transition: .5s;
 }
+
 .no-login-user__button:hover{
     background-color: #5c5c5c;
     transition: .5s;

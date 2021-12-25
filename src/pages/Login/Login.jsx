@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom'
 import {AuthContext} from '../../App'
 import './Login.scss'
 import {usersDb} from '../../databases/usersDb'
-import Help from '../../components/Help/Help'
+
 
 export default function Login() {
 
@@ -22,11 +22,12 @@ export default function Login() {
         if (getCurrentUser) {
            
             login();
+            alert(`Hello,${getCurrentUser.login}`)
             history.push('/private')
 
             
 
-        } else alert('нет такого пользователя')
+        } else alert('Проверьте правильность логина или пароля')
     }
 
     return (

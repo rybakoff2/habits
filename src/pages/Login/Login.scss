@@ -12,83 +12,86 @@
     background-color: #d4d4d4;
     color:#2c2c34;
 
-}
-.form__title{
-    text-align: center;
-    font-size: 28px;
-    color:#2c2c34;
-}
 
-.form__input-wrapper{
-    font-family: "Comic-Sans-MS";
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 120px;
-}
-.form__email{
-    font-family: "Comic-Sans-MS";
-    font-size: 18px;
-    display: block;
-    padding: 8px;
-    height: 40px;
-    width: 180px;
-    background:transparent;
-    color: #2c2c34;
-    border: none;
-    border-bottom: 2px solid #2c2c34;
-}
+    &__title{
+        text-align: center;
+        font-size: 28px;
+        color:#2c2c34;
+    }
 
-.form__email:focus{
-    font-family: "Comic-Sans-MS";
-    color: #2c2c34;
-    font-size: 18px;
-    outline:transparent;
-    border: none;
-    transition:ease-in 0.3s;
-    width: 200px;
-    border-bottom: 2px solid #6d6d6d;
-}
+    &__input-wrapper{
+        font-family: "Comic-Sans-MS";
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 120px;
+    }
 
-.form__password{
-    font-family: "Comic-Sans-MS";
-    font-size: 18px;
-    color: #2c2c34;
-    display: block;
-    padding: 8px;
-    height: 40px;
-    width: 180px;
-    border: none;
-    border-bottom: 2px solid #2c2c34;
-    background:transparent;
-}
+    &__email{
+        font-family: "Comic-Sans-MS";
+        font-size: 18px;
+        display: block;
+        padding: 8px;
+        height: 40px;
+        width: 180px;
+        background:transparent;
+        color: #2c2c34;
+        border: none;
+        border-bottom: 2px solid #2c2c34;
 
+    &:focus{
+        font-family: "Comic-Sans-MS";
+        color: #2c2c34;
+        font-size: 18px;
+        outline:transparent;
+        border: none;
+        transition:ease-in 0.3s;
+        width: 200px;
+        border-bottom: 2px solid #6d6d6d;
+    }
+    }   
 
-.form__password:focus{
-    font-family: "Comic-Sans-MS";
-    color: #2c2c34;
-    font-size: 18px;
-    outline:transparent;
-    border: none;
-    transition:ease-in 0.3s;
-    width: 200px;
-    border-bottom: 2px solid #6d6d6d;
-}
-.form__button{
-    display: block;
-    width: 180px;
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 12px;
-    font-size: 20px;
-    background-color: #2c2c34;
-    border-radius:4px;
-    color: #fff;
-    border-width: 0;
-    cursor: pointer;
-}
-.form__button:hover{
-    background-color: #505050;
+    &__password{
+        font-family: "Comic-Sans-MS";
+        font-size: 18px;
+        color: #2c2c34;
+        display: block;
+        padding: 8px;
+        height: 40px;
+        width: 180px;
+        border: none;
+        border-bottom: 2px solid #2c2c34;
+        background:transparent;
+
+        &:focus{
+            font-family: "Comic-Sans-MS";
+            color: #2c2c34;
+            font-size: 18px;
+            outline:transparent;
+            border: none;
+            transition:ease-in 0.3s;
+            width: 200px;
+            border-bottom: 2px solid #6d6d6d;
+        }
+    }
+
+    &__button{
+        display: block;
+        width: 180px;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 12px;
+        font-size: 20px;
+        background-color: #2c2c34;
+        border-radius:4px;
+        color: #fff;
+        border-width: 0;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #505050;
+    }
+    }
 }

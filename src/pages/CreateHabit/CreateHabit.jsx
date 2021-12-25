@@ -19,8 +19,9 @@ const CreateHabit = () => {
             id: Number(nanoid()),
             title: title,
             description: description,
-            counter: 1
+            counter: 0
         }
+ 
         const prev = JSON.parse(localStorage.getItem('habits'))
         prev.push(newHabit)
         localStorage.setItem('habits', JSON.stringify(prev))

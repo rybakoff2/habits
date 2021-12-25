@@ -5,7 +5,7 @@ import {useContext} from 'react';
 import {AuthContext} from '../../App';
 
 function Header() {
-    const {isAuth, logout,login} = useContext(AuthContext)
+    const {isAuth, logout} = useContext(AuthContext)
     return (
         <nav className='navigation'>
             <Link to="/">
@@ -19,7 +19,7 @@ function Header() {
                 </li>
                 <li className='navigation__links'>
                     <Link className="navigation__link" to="/private">
-                     Мои привычки   {/* {isAuth ? 'Мои привычки' : 'Войти'} */}
+                     Мои привычки
                     </Link>
                  </li>
                 {isAuth && <li className='navigation__link' onClick={logout}>

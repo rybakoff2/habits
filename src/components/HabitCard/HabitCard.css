@@ -62,7 +62,7 @@ background-color: #d9dd92;
   border-radius: 4px;
 
 }
-.prog0{
+.progress-bar0{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -72,7 +72,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color: brown;
 }
-.prog1{
+.progress-bar1{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -81,7 +81,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color:rgb(202, 61, 42);
 }
-.prog2{
+.progress-bar2{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -90,7 +90,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color:rgb(238, 72, 43);
 }
-.prog3{
+.progress-bar3{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -99,7 +99,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color:rgb(45, 117, 158);
 }
-.prog4{
+.progress-bar4{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -108,7 +108,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color:rgb(55, 167, 211);
 }
-.prog5{
+.progress-bar5{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -117,8 +117,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color:rgb(34, 141, 61);
 }
-.prog6{
-  
+.progress-bar6{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -127,7 +126,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color:rgb(53, 155, 27);
 }
-.prog7{
+.progress-bar7{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -136,7 +135,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color:rgb(45, 199, 40);
 }
-.prog8{
+.progress-bar8{
   border-radius: 2px;
   position: absolute;
   top:2px;
@@ -145,16 +144,7 @@ background-color: #d9dd92;
   height: 24px;
   background-color:rgb(40, 224, 64);
 }
-.prog9{
-  border-radius: 2px;
-  position: absolute;
-  top:2px;
-  left:2px;
-  width:100px;
-  height: 24px;
-  background-color:rgb(57, 251, 31);
-}
-.prog10{
+.progress-bar9{
   border-radius: 2px;
   position: absolute;
   top:2px;

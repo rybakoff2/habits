@@ -20,9 +20,10 @@ function App() {
         if (!localStorage.getItem('habits')) {
             localStorage.setItem('habits', JSON.stringify(habitStorage))
             setHabits(habitStorage)
-        } else {
-            const getHabits = JSON.parse(localStorage.getItem('habits'))
-            setHabits(getHabits)
+        } 
+        else {
+            const habits = JSON.parse(localStorage.getItem('habits'))
+            setHabits(habits)
         }
 
     }, [])

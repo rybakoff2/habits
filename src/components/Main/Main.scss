@@ -1,12 +1,14 @@
 
-.main__head {
+.main{
+  height: calc(100vh - 84px);
+
+&__head {
   font-size: 28px;
   font-family: "Comic-Sans-MS";
   text-align: center;
-
 }
 
-.main__hr {
+&__hr {
   margin: 0 auto;
   margin-top: 10px;
   height: 4px;
@@ -30,7 +32,7 @@
     width: 80vw;
   }
 }
-.main__image-wrapper{
+&__image-wrapper{
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -38,10 +40,9 @@
   justify-content: center;
   align-items: center;
 }
-.main__image-button{
+&__image-button{
   display:block;
   align-items: center;
-  /* line-height: 64px; */
   width: 32px;
   height: 64px;
   color: #5a5a68;
@@ -52,28 +53,22 @@
   background-color:#eee;
   padding-bottom: 8px;
   cursor: pointer;
+ 
+    &:hover{
+      background-color:#d8d8d8;
+      height: 84px;
+      transition: .3s;
  }
- .main__image-button:hover{
-   background-color:#d8d8d8;
-   height: 84px;
-   transition: .3s;
- }
-.main-image {
+}
+&__image {
   display: inline-block;
   margin: 8px;
-  width: 50%;
+  width: 90vh ;
   max-width: 1000px;
   min-width: 320px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(37, 37, 37, 0.2);
 }
-.main-arrow{
-  display:inline-block;
-  width: 30px;
-  height: 30px;
-}
-.main__arrow-left{
-  transform:rotate(180deg);
 }
 .text-motivation {
   margin: 0 auto;
@@ -83,20 +78,21 @@
 }
 
 @media screen and (max-width: 480px) {
-  .main-image {
+  .main__image {
     min-width: 200px;
-    margin: 16px 16px;
+    margin: 4px 4px;
   }
 
-  .main-head {
+  .main__head {
     font-size: 20px;
   }
 
-  .main-hr {
+  .main__hr {
     margin-top: 4px;
   }
-  .main-arrow{
-    width: 16px;
-    height: 16px;
+  .main__image-button{
+    font-size: 16px;
+    width: 24px;
+    height: 48px;
 }
 }

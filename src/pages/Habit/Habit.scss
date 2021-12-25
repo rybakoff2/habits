@@ -22,6 +22,15 @@
 }
 &__button{
   background-color: tan;
-
+  border:none;
+  padding: 4px;
+  width: 160px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: tomato;
+  cursor: pointer;
+    &:hover{
+      background-color: rgb(177, 50, 27);
+    }
 }
 }
